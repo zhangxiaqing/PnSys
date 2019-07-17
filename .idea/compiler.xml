@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pn-commodity-consumer" />
+        <module name="pn-commodity-model" />
+        <module name="pn-commodity-provider" />
+        <module name="pn-config" />
+        <module name="pn-eureka" />
+        <module name="pn-hystrix" />
+        <module name="pn-zuul" />
+        <module name="PnSys" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pn-config" options="" />
+      <module name="pn-eureka" options="" />
+      <module name="pn-hystrix" options="" />
+      <module name="pn-zuul" options="" />
+    </option>
+  </component>
+</project>

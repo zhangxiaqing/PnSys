@@ -1,0 +1,17 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: pn-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7776/eureka/
+zuul:
+  routes:
+    api-a:
+      path: /api/a/**
+      serviceId: pn-eureka
+    api-b:
+      path: /api/b/**
+      serviceId: de-dept-consumer

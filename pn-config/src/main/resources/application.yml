@@ -1,0 +1,21 @@
+server:
+  port: 7900
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:7776/eureka/
+spring:
+  application:
+    name: pn-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/wym8051/PnSys.git
+          username: wym8051@163.com
+          password: wym998051
+          search-paths: PnSys
+
+
